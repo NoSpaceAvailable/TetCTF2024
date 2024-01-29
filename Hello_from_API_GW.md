@@ -59,8 +59,8 @@ Chi Tran (Twitter: @imspicynoodles) (Discord: iam.chi)
   - Now it's time to check if the account is set. I use this AWS command:
     ```
     aws sts get-caller-identity
-    (It has the same meaning as *whoami* in Linux)
     ```
+    (It has the same meaning as *whoami* in Linux)
     ![image](https://github.com/NoSpaceAvailable/TetCTF2024/assets/143888307/025f4254-4efd-40ca-8fe5-6d5a3d012bf6)
 
   - AWS S3 is a service that used to storing data of the cloud server. After reaading the cheatsheet (link above), I tried a s3 command:
