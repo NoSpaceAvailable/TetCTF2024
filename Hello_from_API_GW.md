@@ -79,9 +79,11 @@ Chi Tran (Twitter: @imspicynoodles) (Discord: iam.chi)
   - Use pacu to bruteforce priviledge:
     
     Create new attack session:
+    
     ![image](https://github.com/NoSpaceAvailable/TetCTF2024/assets/143888307/a30441b5-07e7-4271-9017-377b2787fd6d)
 
     Use *ls* to list all the command of the tool. In this scenario, I use *iam__bruteforce_permissions*:
+    
     ![image](https://github.com/NoSpaceAvailable/TetCTF2024/assets/143888307/e82956b2-b214-44de-8c55-6faab1d2e1c2)
 
     Type Y to accept, and wait for it.
@@ -92,12 +94,15 @@ Chi Tran (Twitter: @imspicynoodles) (Discord: iam.chi)
     (some not interesting commands)
 
   - To ensure that, I also use another tool:
+    
     [enumerate-iam](https://github.com/andresriancho/enumerate-iam)
 
   - And it didn't find anything else:
+    
     ![image](https://github.com/NoSpaceAvailable/TetCTF2024/assets/143888307/d3cc96b9-d135-49b2-bbd8-99101a30a296)
 
   - This is very tricky, so I have to read again all the documents and information I've retrieved. But there is a thing:
+    
     ![image](https://github.com/NoSpaceAvailable/TetCTF2024/assets/143888307/565ce8d0-4897-4797-9eb4-1966222361d4)
 
   - Other writeups do not have this token. This is so weird, so I asked a cloud engineer about this. He said that the token I used is for execution role but it doesn't have any priviledge. He also said that AWS lambda can ignore that token and use the pre-defined token saved in the environment variable. So, that means the ENV_ tokens above are the correct tokens.
