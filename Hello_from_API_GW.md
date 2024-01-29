@@ -64,7 +64,7 @@ Chi Tran (Twitter: @imspicynoodles) (Discord: iam.chi)
     
     ![image](https://github.com/NoSpaceAvailable/TetCTF2024/assets/143888307/025f4254-4efd-40ca-8fe5-6d5a3d012bf6)
 
-  - AWS S3 is a service that used to storing data of the cloud server. After reaading the cheatsheet (link above), I tried a s3 command:
+  - AWS S3 is a service that used to storing data of the cloud server. After reading the cheatsheet (link above), I tried a s3 command:
     ![image](https://github.com/NoSpaceAvailable/TetCTF2024/assets/143888307/c714633d-7834-41b1-9652-5f22fd296434)
 
   - Maybe this account has restricted priviledge. Since AWS has so many service and command, I used this tool to bruteforce account's priviledge:
@@ -77,6 +77,7 @@ Chi Tran (Twitter: @imspicynoodles) (Discord: iam.chi)
     ```
 
   - Use pacu to bruteforce priviledge:
+    
     Create new attack session:
     ![image](https://github.com/NoSpaceAvailable/TetCTF2024/assets/143888307/a30441b5-07e7-4271-9017-377b2787fd6d)
 
