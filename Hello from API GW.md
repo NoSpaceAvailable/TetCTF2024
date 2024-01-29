@@ -29,7 +29,9 @@ Chi Tran (Twitter: @imspicynoodles) (Discord: iam.chi)
 - The message is "Evaluated User Input" so I think they used *eval()* in the backend, so we can gain RCE. After a while, I realized that they use Javascript for the backend. This is my payload:
   ```
   process.env
+  ```
   Or you can use this to read other things on the server:
+  ```
   require('child_process').execSync('env', {encoding: 'UTF-8'}).trim().split('\n')
   ```
   (I switched to Burpsuite for convenient)
