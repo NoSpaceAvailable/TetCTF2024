@@ -26,7 +26,7 @@ Chi Tran (Twitter: @imspicynoodles) (Discord: iam.chi)
 - There is a parameter on the URL. I tried to modify it:
   ![image](https://github.com/NoSpaceAvailable/TetCTF2024/assets/143888307/b1d4e2c7-166a-4264-b4d6-e73e1e497257)
 
-- The message is "Evaluated User Input" so I think they used *eval()* in the backend, so we can gain RCE. After a while, I realized that they use Javascript for the backend. This is my payload:
+- The message is "Evaluated User Input" so I think they used *eval()* in the backend, so we can gain RCE. After a while, I realized that they use Javascript for the backend. This is the payload:
   ```
   process.env
   ```
